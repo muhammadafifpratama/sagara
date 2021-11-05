@@ -75,6 +75,7 @@ module.exports = {
                 }
                 else {
                     cli.close();
+                    res.status(200).send(result)
                 }
             })
         })
