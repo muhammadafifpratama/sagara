@@ -1,5 +1,7 @@
-let filter = require('./filterouter')
+let userauth = require('./userouter')
+let dataproduk = require('./productrouter')
 
 module.exports = {
-    filter
+    userauth,
+    dataproduk
 }

@@ -1,5 +1,7 @@
-let filter = require('./gamesfilter')
+let userauth = require('./usercontrollers')
+let dataproduk = require('./productcontrollers')
 
 module.exports = {
-    filter
+    userauth,
+    dataproduk
 }

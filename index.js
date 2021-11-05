@@ -6,8 +6,8 @@ const bodyParser = require('body-parser')
 app.use(cors())
 app.use(bodyParser.json())
 
-let { filter } = require('./routers')
-app.use('/mongo',filter)
+let { userauth,dataproduk} = require('./routers')
+app.use('/mongo', userauth,dataproduk)
 app.get('/', (req, res) => {
     res.send(`<h1>muncul kan</h1>`)
 })
