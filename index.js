@@ -7,7 +7,8 @@ app.use(cors())
 app.use(bodyParser.json())
 
 let { userauth,dataproduk} = require('./routers')
-app.use('/mongo', userauth,dataproduk)
+app.use('/product', dataproduk)
+app.use('/user', userauth)
 app.get('/', (req, res) => {
     res.send(`<h1>muncul kan</h1>`)
 })
